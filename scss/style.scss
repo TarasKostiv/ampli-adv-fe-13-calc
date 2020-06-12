@@ -1,4 +1,5 @@
 @import "tool";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -13,10 +14,16 @@ body {
 
 html {
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   @extend .align-cnt, .justify-cnt;
+}
+
+input,
+button {
+  font-family: inherit;
 }
 
 .wrapper {
@@ -45,7 +52,8 @@ body {
   &__btn {
     width: 33.3333%;
     height: 50px;
-
     font-size: 1.2rem;
+
+    background: none;
   }
 }
