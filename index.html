@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="result">
+        <h1 class="result__header" id="result-block">result</h1>
+      </div>
+
+      <div class="inputs">
+        <input
+          class="inputs__input"
+          type="number"
+          name="fisrt-value"
+          id="fisrt-value"
+        />
+        <input
+          class="inputs__input"
+          type="number"
+          name="second-value"
+          id="second-value"
+        />
+      </div>
+
+      <div class="group-btn">
+        <button onclick="mathOperation('+')" class="group-btn__btn">
+          +
+        </button>
+        <button onclick="mathOperation('-')" class="group-btn__btn">-</button>
+        <button onclick="mathOperation('*')" class="group-btn__btn">*</button>
+        <button onclick="mathOperation('/')" class="group-btn__btn">/</button>
+        <button onclick="mathOperation('>')" class="group-btn__btn">
+          &#62;
+        </button>
+        <button onclick="mathOperation('<')" class="group-btn__btn">
+          &#60;
+        </button>
+        <button onclick="mathOperation('=')" class="group-btn__btn">=</button>
+        <button onclick="mathOperation('>=')" class="group-btn__btn">
+          &#x22DD;
+        </button>
+        <button onclick="mathOperation('<=')" class="group-btn__btn">
+          &#x22DC;
+        </button>
+        <button
+          onclick="mathOperation('reset')"
+          class="group-btn__btn"
+          type="reset"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

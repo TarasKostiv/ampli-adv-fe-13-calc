@@ -1,0 +1,68 @@
+.space-bt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-cnt {
+  display: flex;
+  align-items: center;
+}
+
+.justify-cnt {
+  display: flex;
+  justify-content: center;
+}
+
+.fd-clm {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// @mixin linkHover($color, $transition-time) {
+//   &::after {
+//     content: "";
+//     transition: $transition-time all;
+//     border: 1px solid $color;
+//     display: block;
+//     transform: scale(0);
+//     transform-origin: (0%);
+//   }
+
+//   &:hover::after {
+//     content: "";
+//     transform: scale(1);
+//     transform-origin: 100%;
+//   }
+// }
+
+// @mixin elemHoverAndClick(
+//   $color,
+//   $bc-color,
+//   $a-color,
+//   $a-bc-color,
+//   $transition-time,
+//   $scale,
+//   $a-scale
+// ) {
+//   & {
+//     transition: $transition-time color, $transition-time background-color,
+//       $transition-time transform;
+//   }
+
+//   &:hover {
+//     color: $color;
+//     background-color: $bc-color;
+//     transform: scale($scale);
+//   }
+
+//   &:active {
+//     color: $a-color;
+//     background-color: $a-bc-color;
+//     transform: scale($a-scale);
+//   }
+// }
