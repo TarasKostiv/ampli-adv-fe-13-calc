@@ -67,21 +67,39 @@ button {
 }
 
 .result {
-  width: 100%;
+  max-width: 100%;
 }
 
 .result__header {
-  text-transform: capitalize;
+  font-size: 1.2rem;
 }
 
 .inputs__input {
   font-size: 1.2rem;
   height: 50px;
+  outline: none;
+  background: none;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.inputs__input:focus {
+  border-bottom: 1px solid black;
 }
 
 .group-btn__btn {
   width: 33.3333%;
   height: 50px;
   font-size: 1.2rem;
+  outline: none;
   background: none;
+  border: none;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.group-btn__btn:focus {
+  border-bottom: 1px solid black;
 }

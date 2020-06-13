@@ -26,23 +26,30 @@ button {
   font-family: inherit;
 }
 
-.wrapper {
-}
-
 .result {
   @extend .align-cnt, .justify-cnt;
-  width: 100%;
+  max-width: 100%;
 
   &__header {
-    text-transform: capitalize;
+    // text-transform: capitalize;
+    font-size: 1.2rem;
   }
 }
 
 .inputs {
   &__input {
     font-size: 1.2rem;
-
     height: 50px;
+
+    outline: none;
+    background: none;
+    border: 1px solid transparent;
+
+    transition: all 0.2s;
+
+    &:focus {
+      border-bottom: 1px solid black;
+    }
   }
 }
 
@@ -54,6 +61,15 @@ button {
     height: 50px;
     font-size: 1.2rem;
 
+    outline: none;
     background: none;
+    border: none;
+    border: 1px solid transparent;
+
+    transition: all 0.2s;
+
+    &:focus {
+      border-bottom: 1px solid black;
+    }
   }
 }
