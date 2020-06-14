@@ -40,12 +40,17 @@ button {
   &__input {
     font-size: 1.2rem;
     height: 50px;
+    width: calc(50% - 5px);
 
     outline: none;
     background: none;
     border: 1px solid transparent;
 
     transition: all 0.2s;
+
+    &:hover {
+      border-bottom: 1px solid gray;
+    }
 
     &:focus {
       border-bottom: 1px solid black;
@@ -60,6 +65,7 @@ button {
     width: 33.3333%;
     height: 50px;
     font-size: 1.2rem;
+    cursor: pointer;
 
     outline: none;
     background: none;
@@ -68,8 +74,20 @@ button {
 
     transition: all 0.2s;
 
-    &:focus {
+    &:hover {
+      border-bottom: 1px solid gray;
+    }
+
+    &:active {
+      transform: scale(0.95);
       border-bottom: 1px solid black;
     }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wrapper {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
