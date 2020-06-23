@@ -2,6 +2,14 @@ const firstValue = document.querySelector("#fisrt-value");
 const secondValue = document.querySelector("#second-value");
 const resultBlock = document.querySelector("#result-block");
 
+/* 
+! ee
+? ee
+* ee
+todo ee
+// ee
+*/
+
 function mathOperation(whichOperation) {
   let result;
   switch (whichOperation) {
